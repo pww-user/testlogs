@@ -5,7 +5,7 @@
         </button>
         <ion-buttons data-comp-id="buttons.1" left=""></ion-buttons>
         <ion-title data-comp-id="title.1" text-center="">
-            <div data-comp-id="text.3" ion-text="">Request Asset Transfer</div>
+            <div data-comp-id="text.1" ion-text="">Request Asset Transfer</div>
         </ion-title>
         <ion-buttons data-comp-id="buttons.2" right=""></ion-buttons>
     </ion-navbar>
@@ -31,7 +31,7 @@
     </ion-list>
     <ion-list data-comp-id="list.2">
         <ion-list-header color="calm" data-comp-id="list-header.1">
-            <span color="light" data-comp-id="text.1" ion-text="">Current Asset Location</span>
+            <span color="light" data-comp-id="text.2" ion-text="">Current Asset Location</span>
         </ion-list-header>
         <ion-item data-comp-id="input.3">
             <ion-label color="dark" style="width: 85px;">Building #</ion-label>
@@ -44,8 +44,8 @@
         </ion-item>
     </ion-list>
     <ion-list data-comp-id="list.3">
-        <ion-list-header color="calm" data-comp-id="list-header.2">
-            <span color="light" data-comp-id="text.2" ion-text="">New Asset Location</span>
+        <ion-list-header color="good" data-comp-id="list-header.2" style="">
+            <span color="light" data-comp-id="text.3" ion-text="">New Asset Location</span>
         </ion-list-header>
         <ion-item data-comp-id="input.5">
             <ion-label color="dark" style="width: 85px;">Building #</ion-label>
@@ -57,15 +57,15 @@
         </ion-item>
     </ion-list>
     <touchid-save [authRequest]="appService ? appService.getAuthRequest() : null"
-        data-comp-id="touchid-save.1" message="Would you like to use {{getBiometricAuthType()}} to login?"
+        data-comp-id="touchid-save.1"
+        message="Would you like to use {{getBiometricAuthType()}} to login?"
         title="{{getBiometricAuthType()}} Available"></touchid-save>
 </ion-content>
 <ion-footer data-comp-id="footer.1">
     <ion-row data-comp-id="row.1">
         <ion-col data-comp-id="column.1" style="text-align: center;">
-            <button (click)="action('Submit')" color="highlight"
-                data-comp-id="button.1" ion-button=""
-                style="padding: 0px 20px;">
+            <button (click)="action('Submit')" color="highlight" data-comp-id="button.2"
+                ion-button="" style="padding: 0px 20px;">
                 <ion-icon class="ion-md-arrow-round-forward"></ion-icon>
                 <span ion-text="">Submit</span>
             </button>
